@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+body {
+  @apply min-h-screen bg-gradient-to-b from-[#006494DD] to-slate-400 bg-no-repeat;
+}
+nav {
+  @apply flex text-white justify-center py-3;
+  background-color: #006494;
+}
+
+li {
+  @apply list-none;
+}
+
+#root {
+  @apply min-h-screen flex flex-col
+}
+
+h1 {
+  @apply text-2xl
+}
+
+h3 {
+  @apply text-xl;
+}
+
+label {
+  @apply block;
+}
+
+input, button {
+  @apply rounded-xl
+}
+
+input {
+  @apply p-1 px-2 text-slate-900 w-full
+}
+
+thead th {
+  @apply text-slate-800 text-left
+}
+
+tbody tr {
+  @apply border border-slate-900 border-x-0
+}
+
+tbody td {
+  @apply py-2 px-1
+}
